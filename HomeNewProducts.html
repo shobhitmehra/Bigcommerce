@@ -1,0 +1,28 @@
+
+<div class="Block NewProducts Moveable Panel" id="HomeNewProducts" style="display:%%GLOBAL_HideHomeNewProductsPanel%%">
+   <h2>What we love right now!</h2>
+   <div class="BlockContent">
+      <ul class="ProductList">
+         %%SNIPPET_HomeNewProducts%%
+      </ul>
+      <div class="clear"></div>
+   </div>
+   <div class="clear"></div>
+</div>
+<div class="jcarousel-wrapper">
+   <div class="jcarousel">
+      <ul>
+      </ul>
+   </div>
+   <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+   <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+</div>
+<script type="text/javascript" src="jcarousel.responsive.js"></script>
+<script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+<script language="javascript">
+   jQuery('#HomeNewProducts ul.ProductList > li').each(function (){
+       jQuery(this).remove().appendTo('.jcarousel-wrapper .jcarousel > ul')
+   });
+   
+</script>
+
