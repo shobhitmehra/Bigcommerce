@@ -1,4 +1,4 @@
-# Bigcommerce
+# Bigcommerce Product Carousel
 
 <h2>About</h2>
 
